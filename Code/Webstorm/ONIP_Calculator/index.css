@@ -1,0 +1,149 @@
+body
+{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.head
+{
+    /*background-color: #f3edd1;*/
+    margin: 20px auto 0;
+    width: 40%;
+    height: 100px;
+    display: flex;
+}
+
+.logo
+{
+    width: 30%;
+    /*background-color: black;*/
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.logo img
+{
+    width: 100%;
+    margin: auto;
+}
+
+.title
+{
+    width: 70%;
+    /*background-color: aquamarine;*/
+}
+
+.title h1
+{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: Raleway, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.title p
+{
+    color: #6e6e6e;
+    text-align: center;
+    margin-top: 0px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+
+.main
+{
+    /*display: flex;*/
+    /*justify-content: center; !* 水平居中 *!*/
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.options p
+{
+    font-family: "Gill Sans", sans-serif;
+    color: #cc2b21;
+    font-size: 20px;
+    margin: 10px auto 5px;
+}
+
+.options
+{
+    width: 100%;
+}
+
+label
+{
+    font-family: "Gill Sans", sans-serif;
+}
+
+select {
+    width: 100%; /* 设置宽度 */
+    padding: 8px; /* 添加内边距 */
+    border: 1px solid #ccc; /* 边框样式 */
+    color: #6e6e6e;
+    border-radius: 4px; /* 圆角 */
+    font-size: 12px; /* 字体大小 */
+}
+
+option {
+    padding: 10px; /* 选项内边距 */
+    font-size: 12px; /* 字体大小 */
+}
+
+option:disabled {
+    color: gray; /* 禁用选项的颜色 */
+    background-color: #f1f1f1; /* 禁用选项的背景色 */
+}
+
+.but
+{
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    background-color: white;
+    color: #cc2b21;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: #cc2b21 1px solid;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease 0.05s, color 0.3s ease 0.05s;
+}
+
+button:hover {
+    background-color: #cc2b21;
+    border: #ffffff 1px solid;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.copyright
+{
+    text-align: center;
+    font-family: Raleway, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6e6e6e;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+@media (max-width: 450px) {
+    .head
+    {
+        width: 80%;
+    }
+    .main
+    {
+        width: 80%;
+    }
+}

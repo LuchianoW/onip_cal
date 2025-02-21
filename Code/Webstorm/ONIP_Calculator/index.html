@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONIP_Calculator</title>
+    <link rel="stylesheet" href="index.css"> <!-- 引入CSS -->
+    <script src="index.js"></script> <!-- 引入JS -->
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="image/canadaFlag.png"/>
+        </div>
+        <div class="title">
+            <h1>ONIP</h1>
+            <p>Masters Graduate stream</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="options">
+            <p>Employment / labour market factors</p>
+            <label for="visa">Work or study permit status</label>
+            <select id="visa" name="visa">
+                <option value="" disabled selected>--Select--</option>
+                <option value="visa_0">With valid work or study permit</option>
+                <option value="visa_1">Without valid work or study permit</option>
+            </select>
+            <label for="salary">Earnings history</label>
+            <select id="salary" name="salary">
+                <option value="" disabled selected>--Select--</option>
+                <option value="salary_0">$40k or more earnings in a year</option>
+                <option value="salary_1">Less than $40k earnings in a year</option>
+            </select>
+        </div>
+        <div class="options">
+            <p>Education</p>
+            <label for="level">Highest level of education</label>
+            <select id="level" name="level">
+                <option value="" disabled selected>--Select--</option>
+                <option value="level_0">PhD</option>
+                <option value="level_1">Masters</option>
+                <option value="level_2">Bachelors or equivalent</option>
+                <option value="level_3">Graduate diploma or certificate</option>
+                <option value="level_4">Undergraduate diploma or certificate</option>
+                <option value="level_5">Apprenticeship or trades certificate or diploma</option>
+                <option value="level_6">Less than college or trade certificate</option>
+            </select>
+            <label for="field">Field of study</label>
+            <select id="field" name="field">
+                <option value="" disabled selected>--Select--</option>
+                <option value="field_0">STEM/Health (Engineering, Health, Math, Computer Science) and Trades (agriculture and natural resources operations and management, mechanics and repair, architecture, construction and precision production) </option>
+                <option value="field_1">Business and administration, social, legal, education, behavioral science, personal, security and transport services, social work and related programs</option>
+                <option value="field_2">Arts and humanities, Business, humanities, arts, social science and education (BHASE) programs, not elsewhere classified (n.e.c)</option>
+            </select>
+            <label for="exp">Canadian education experience</label>
+            <select id="exp" name="exp">
+                <option value="" disabled selected>--Select--</option>
+                <option value="exp_0">More than one Canadian credential</option>
+                <option value="exp_1">One Canadian credential</option>
+            </select>
+        </div>
+        <div class="options">
+            <p>Language</p>
+            <label for="clb">Official language ability</label>
+            <select id="clb" name="clb">
+                <option value="" disabled selected>--Select--</option>
+                <option value="clb_0">CLB 9 or higher</option>
+                <option value="clb_1">CLB 8</option>
+                <option value="clb_2">CLB 7</option>
+                <option value="clb_3">CLB 6 or lower</option>
+            </select>
+            <label for="lan">Knowledge of official languages</label>
+            <select id="lan" name="lan">
+                <option value="" disabled selected>--Select--</option>
+                <option value="lan_0">2 Official Languages – 10 points (a minimum Canadian Language Benchmark (CLB) score of 7 in one official language and a minimum CLB 6 in the second official language)</option>
+                <option value="lan_1">1 Official Language</option>
+            </select>
+        </div>
+        <div class="options">
+            <p>Regionalization</p>
+            <label for="reg">Regional immigration: location of study</label>
+            <select id="reg" name="reg">
+                <option value="" disabled selected>--Select--</option>
+                <option value="reg_0">Northern Ontario</option>
+                <option value="reg_1">Other areas outside GTA (except Northern Ontario)</option>
+                <option value="reg_2">Inside GTA (except Toronto)</option>
+                <option value="reg_3">Toronto</option>
+                <option value="reg_4">Credential was completed without physically attending (in-person) classes</option>
+            </select>
+        </div>
+
+        <div class="but">
+            <button onclick="calScore()">Calculate</button>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>By Luchiano Wang :)</p>
+    </div>
+</body>
+</html>
